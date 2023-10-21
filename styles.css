@@ -1,0 +1,299 @@
+
+@font-face {
+    font-family: "Ranate";
+    src: url("font/Sk-Modernist-Regular.otf");
+}
+
+
+@font-face {
+    font-family: "Calfine";
+    src: url("font/RousseauDeco.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body
+{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    font-family: "Ranate";
+    background-color: #16161D;
+    color: #fff;
+    overflow-x:hidden;
+    overflow-y: hidden;
+
+}
+
+h1 {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.hover, .hover2 {
+    color: #fff;
+}
+.container {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-left: 1em;
+    z-index: 1;
+}
+
+
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 2em;
+    padding-left: 1em;
+    padding-bottom: 2em;
+    padding-top: 2em;
+  
+}
+.nav p {
+    cursor: pointer;
+    text-align: left;
+}
+
+.underline:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    z-index: 0;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    padding: 2em;
+    display: flex;
+    justify-content: end;
+}
+
+.items {
+    position: absolute;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    color: #9C9C9C;
+}
+
+.item {
+    display: flex;
+    padding: 0.25em 0.5em;
+    cursor: pointer;
+}
+
+.item-index {
+    flex: 1;
+}
+
+.item-name {
+    flex: 4;
+}
+
+.item-year {
+    flex: 1;
+}
+
+.overlay, .overlay2 {
+    position: absolute;
+    bottom: -1000px;
+    right: 0px;
+    width: 70%;
+    height: 700px;
+    padding-left: 2em;
+    background-color: #fff;
+    color: #000;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    z-index: 4;
+    will-change: bottom;
+    transform: translateZ(0) rotate(30deg);
+    transform-origin: bottom center;
+}
+
+.overlay2 {
+    z-index: 3;
+}
+
+.overlay::-webkit-scrollbar , .overlay2::-webkit-scrollbar {
+    display: none;
+}
+
+.img-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: left;
+
+}
+
+.image {
+    width: 26%;
+    height: 100%;
+    object-fit: cover;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.overlay-header , .overlay-header2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 2em 0;
+}
+
+.col:nth-child(1) {
+    flex: 3;
+}
+
+.col:nth-child(2) {
+    flex: 2;
+}
+
+#close-btn {
+    cursor: pointer;
+    opacity: 0.4;
+}
+
+#close-btn:hover {
+    color: red;
+    opacity: 1;
+}
+
+.item-details {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0 4em 0;
+}
+
+
+.item-details p:nth-child(1) {
+    flex: 3;
+}
+
+.item-details p:nth-child(2) {
+    flex: 2;
+}
+
+@media (max-width: 900px) {
+    .items {
+        width: 100%;
+        bottom: 8em;
+    }
+
+    .overlay {
+        width: 100%;
+        height: 100vh;
+    }
+}
+
+
+.aboutme {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 90vh;
+}
+
+.aboutme-img {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutme-img img {
+    width: 400px;
+    height: auto;
+    object-fit: cover;
+}
+
+.aboutme-text {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+}
+
+.aboutme-text p {
+    width: 60%;
+    text-align: center;
+}
+
+.title {
+    font-size: 2rem;
+    font-family: "Calfine";
+    width: 150px;
+}
+
+.foot {
+    color: #9C9C9C;
+    margin-left: 10px;
+}
+
+.foot:hover {
+    color: #fff;
+}
+
+@media (max-width: 1344px) {
+
+    .aboutme {
+        height: 75vh;
+    }
+    .aboutme-img {
+        width: 100%;
+        height: 50%;
+        background-color: #fff;
+        margin-bottom: 10px;
+    }
+
+    .aboutme-img img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .aboutme-text {
+        width: 100%;
+        height: 50%;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .aboutme-text p {
+        width: 70%;
+    }
+
+    .image {
+        width: 90%;
+        margin-right: 0;
+    }
+    
+}
+
+span {
+    background-color: green;
+}
