@@ -125,6 +125,7 @@ a {
     will-change: bottom;
     transform: translateZ(0) rotate(30deg);
     transform-origin: bottom center;
+    display: none;
 }
 
 .overlay2 {
@@ -142,6 +143,7 @@ a {
     will-change: bottom;
     transform: translateZ(0) rotate(30deg);
     transform-origin: bottom center;
+    display: none;
 }
 .overlay2 {
     z-index: 3;
