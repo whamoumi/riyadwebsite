@@ -110,7 +110,7 @@ a {
     flex: 1;
 }
 
-.overlay, .overlay2 {
+.overlay{
     position: absolute;
     bottom: -1000px;
     right: 0px;
@@ -127,6 +127,22 @@ a {
     transform-origin: bottom center;
 }
 
+.overlay2 {
+    position: absolute;
+    bottom: -1000px;
+    right: -200px;
+    width: 70%;
+    height: 700px;
+    padding-left: 2em;
+    background-color: #fff;
+    color: #000;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    z-index: 4;
+    will-change: bottom;
+    transform: translateZ(0) rotate(30deg);
+    transform-origin: bottom center;
+}
 .overlay2 {
     z-index: 3;
 }
@@ -262,7 +278,7 @@ a {
 @media (max-width: 1344px) {
 
     .aboutme {
-        height: 75vh;
+        height: 70vh;
     }
     .aboutme-img {
         width: 100%;

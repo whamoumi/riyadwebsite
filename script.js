@@ -49,7 +49,7 @@ const tl = gsap.timeline({ paused: true, overwrite: "auto" });
 const tl2 = gsap.timeline({ paused: true, overwrite: "auto" });
 
 tl.to(overlay, { duration: 0.5, bottom: "0px", rotation: 0, transformOrigin : "bottom center", ease: "power1.inOut" })
-tl2.to(overlay2, { duration: 0.5, bottom: "-550px", rotation: 10, transformOrigin : "bottom center", ease: "power1.inOut" })
+tl2.to(overlay2, { duration: 0.5, bottom: "-600px", rotation: 10, transformOrigin : "bottom center", ease: "power1.inOut" })
 const items = document.querySelectorAll('.item');
 
 items.forEach((item, index) => { 
