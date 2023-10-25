@@ -6,7 +6,7 @@ const data = [
             itemName: "Shooting by night ",
             itemCopy: "A little shoting by night in the city of Nice",
             itemImg: [ "./assets/projet1/1.jpg", "./assets/projet1/2.jpg", "./assets/projet1/3.jpg", "./assets/projet1/4.jpg", "./assets/projet1/5.jpg", "./assets/projet1/6.jpg",
-            "./assets/projet1/7.jpg", "./assets/projet1/8.jpg", "./assets/projet1/9.jpg", "./assets/projet1/10.jpg", "./assets/projet1/11.jpg", "./assets/projet1/12.jpg",]
+            "./assets/projet1/7.jpg", "./assets/projet1/8.jpg", "./assets/projet1/9.jpg",]
         },
 
         
